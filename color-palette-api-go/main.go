@@ -220,9 +220,13 @@ func getPort() string {
 
 func main() {
 	// Set Gin to release mode in production
-	if os.Getenv("GIN_MODE") == "" {
-		gin.SetMode(gin.DebugMode)
-	}
+	// if os.Getenv("GIN_MODE") == "" {
+	// 	gin.SetMode(gin.DebugMode)
+	// }
+
+	 if os.Getenv("GIN_MODE") == "" {
+        gin.SetMode(gin.ReleaseMode)
+    }
 
 	// Setup router with all routes and middleware
 	router := setupRouter()
