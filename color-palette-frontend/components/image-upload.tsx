@@ -63,14 +63,13 @@ export function ImageUpload({
       formData.append("image", file);
 
       try {
-        const response = await fetch(
-          process.env.NEXT_PUBLIC_API_URL ||
-            "http://localhost:8080/api/extract",
-          {
-            method: "POST",
-            body: formData,
-          }
-        );
+        const API_BASE =
+          process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080";
+
+        const response = await fetch(`${API_BASE}/api/extract`, {
+          method: "POST",
+          body: formData,
+        });
 
         if (!response.ok) {
           throw new Error("Failed to extract colors");
