@@ -48,6 +48,6 @@ NEXT_PUBLIC_API_URL=http://localhost:8080
 Production Deployment
 Backend → Railway
 Frontend → Vercel
-On Vercel, set:
 
+On Vercel, set:
 NEXT_PUBLIC_API_URL=https://<your-railway-domain>
