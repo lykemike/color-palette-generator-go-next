@@ -133,7 +133,7 @@ func setupRouter() *gin.Engine {
 
 	// Configure CORS to allow frontend requests
 	router.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:3000", "https://color-palette-generator-go-next.vercel.app/"},
+		AllowOrigins:     []string{"http://localhost:3000", "https://color-palette-generator-go-next.vercel.app"},
 		AllowMethods:     []string{"GET", "POST", "OPTIONS"},
 		AllowHeaders:     []string{"Origin", "Content-Type"},
 		AllowCredentials: true,
