@@ -4,10 +4,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="text-center">
           <p className="text-sm text-slate-600">
-            Built by Mekk.hl with <span className="text-red-500">♥</span> using
-            Next.js and Go
+            Built by Mekk.hl using Next.js and Go
           </p>
-          <div className="flex items-center justify-center gap-4 mt-4">
+          {/* <div className="flex items-center justify-center gap-4 mt-4">
             <a
               href="https://github.com/yourusername/color-palette-generator"
               target="_blank"
@@ -23,7 +22,7 @@ export default function Footer() {
             >
               Privacy Policy
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
