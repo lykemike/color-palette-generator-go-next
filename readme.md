@@ -15,7 +15,39 @@ Extract dominant colors from images using computer vision algorithms.
 - One-click color copying
 
 ## Live Demo
-[Your Vercel URL]
+[https://color-palette-generator-go-next.vercel.app/]
 
 ## Local Development
-[Setup instructions]
+Local Development
+1. Clone the repository
+git clone https://github.com/lykemike/color-palette-generator-go-next.git
+cd color-palette-generator-go-next
+
+2. Backend Setup (Go + Gin)
+cd color-palette-api-go
+go mod tidy
+go run main.go
+
+Backend runs at:
+http://localhost:8080
+
+3. Frontend Setup (Next.js)
+cd color-palette-frontend
+npm install
+npm run dev
+
+Frontend runs at:
+http://localhost:3000
+
+4. Environment Variable
+Create a file:
+color-palette-frontend/.env.local
+
+Add:
+NEXT_PUBLIC_API_URL=http://localhost:8080
+Production Deployment
+Backend → Railway
+Frontend → Vercel
+On Vercel, set:
+
+NEXT_PUBLIC_API_URL=https://<your-railway-domain>
